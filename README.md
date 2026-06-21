@@ -17,6 +17,9 @@ Additional contextual background on the system transition can be found in this C
 * **Data visualization:** Tableau
 * **Documentation and presentation:** GitHub
 
+## Data preparation & processing
+[Briefly explain your process. Example: Data was imported into BigQuery, where it underwent cleaning to handle missing values and deduplication. Final aggregated datasets were then exported to Tableau for exploratory analysis and dashboard creation.]
+
 ## 📊 Key Findings
 * **[Finding 1]:** (e.g., Performance in Mathematics showed a X% variance across rural vs. urban districts.)
 * **[Finding 2]:** (e.g., Transition challenges are most pronounced in [specific category] during the first two years.)
@@ -30,8 +33,3 @@ Additional contextual background on the system transition can be found in this C
 * `/sql`: Contains the cleaning and analysis queries used to transform the raw data.
 * `/visualizations`: Contains exported snapshots of the final Tableau dashboard.
 * `/docs`: Detailed project report and methodology.
-
-## 📝 Methodology
-[Briefly explain your process. Example: Data was imported into BigQuery, where it underwent cleaning to handle missing values and deduplication. Final aggregated datasets were then exported to Tableau for exploratory analysis and dashboard creation.]
-
----
