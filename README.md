@@ -11,8 +11,8 @@ My key analytical objectives were:
 
 Additional contextual background on the system transition can be found in this Context Document <link>.
 
-## Tools & technologies used
-* **Data preparation & processing:** BigQuery (SQL), Excel
+## Tools used
+* **Data preparation & processing:** BigQuery (SQL), Spreadsheets
 * **Exploratory data analysis:** BigQuery (SQL)
 * **Data visualization:** Tableau
 * **Documentation and presentation:** GitHub
