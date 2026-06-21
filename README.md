@@ -11,10 +11,11 @@ My key analytical objectives were:
 
 Additional contextual background on the system transition can be found in this Context Document <link>.
 
-## 🛠 Tools & Technologies
-* **Data Cleaning & Manipulation:** BigQuery (SQL)
-* **Visualization:** Tableau
-* **Data Transformation:** [Mention any other tools like R or Excel if used]
+## Tools & technologies used
+* **Data preparation & processing:** BigQuery (SQL), Excel
+* **Exploratory data analysis:** BigQuery (SQL)
+* **Data visualization:** Tableau
+* **Documentation and presentation:** GitHub
 
 ## 📊 Key Findings
 * **[Finding 1]:** (e.g., Performance in Mathematics showed a X% variance across rural vs. urban districts.)
