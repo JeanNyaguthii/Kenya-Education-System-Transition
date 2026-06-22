@@ -6,25 +6,25 @@
 
 -- Prep work: Cleaning up column naming and errors in the data table
 WITH cleaned_KPSEA_performance_data AS (
-	SELECT -- formatting field names in snake_case
-		`Frequency` AS frequency,
-		`Statistical unit` AS performance_level,
-		`Unit of measure` AS uom,
-		`Breakdown group identifier` AS subject,
-		`Time period` AS year,
-		`Observation` AS value,
-		`Observation status` AS observation_status,
-		`Unit Multiplier` AS unit_multiplier,
-		`Note for Statistical Unit` AS note_for_statistical_unit,
-		`Note for Reference Sector` AS note_for_reference_sector,
-		`Note for Breakdown Group` AS note_for_breakdown_group,
-		`Note for Dataset` AS note_for_dataset,
-		`Reference Period Details` AS reference_period_details,
-		`Note for Education Level` AS note_for_education_level,
-		`Time Period Details` AS time_period_details,
-		`Source` AS source
-	FROM 
-	  capstone-project-497111.performance_data.KPSEA_performance
+SELECT -- formatting field names in snake_case
+	`Frequency` AS frequency,
+	`Statistical unit` AS performance_level,
+	`Unit of measure` AS uom,
+	`Breakdown group identifier` AS subject,
+	`Time period` AS year,
+	`Observation` AS value,
+	`Observation status` AS observation_status,
+	`Unit Multiplier` AS unit_multiplier,
+	`Note for Statistical Unit` AS note_for_statistical_unit,
+	`Note for Reference Sector` AS note_for_reference_sector,
+	`Note for Breakdown Group` AS note_for_breakdown_group,
+	`Note for Dataset` AS note_for_dataset,
+	`Reference Period Details` AS reference_period_details,
+	`Note for Education Level` AS note_for_education_level,
+	`Time Period Details` AS time_period_details,
+	`Source` AS source
+FROM 
+  	capstone-project-497111.performance_data.KPSEA_performance
 ),
 
 -- 1. Checking data completeness
@@ -89,22 +89,22 @@ FROM
 
 -- This table confirms that the performance levels used are only the 4 expected for the KPSEA (Below Expectation, Approaching Expectation, Meeting Expectation, Exceeding Expectation)
 performance_levels_reported_on AS (
-  SELECT
+SELECT
     ARRAY_AGG(DISTINCT performance_level) AS performance_levels_reported_on
-  FROM
+FROM
     cleaned_KPSEA_performance_data
 ),
 
 -- 4. Checking for contradictory data (more than 1 value reported for the same performance level, subject and year
 contradictions_check AS (
-  SELECT
+SELECT
     ARRAY_TO_STRING([CAST(year AS string), performance_level, subject],"_") AS value_identifier,
     COUNT(*) AS no_of_values_per_value_identifier
-  FROM
-    cleaned_KPSEA_performance_data
-  GROUP BY
+FROM
+	cleaned_KPSEA_performance_data
+GROUP BY
     value_identifier
-  HAVING
+HAVING
     no_of_values_per_value_identifier > 1
 ),
 
