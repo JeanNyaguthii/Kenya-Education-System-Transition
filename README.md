@@ -17,23 +17,22 @@ Additional contextual background on the system transition can be found in this C
 * **Data visualization:** Tableau
 * **Documentation and presentation:** GitHub
 
-## Data preparation & processing
+## Data preparation
 #### Data sourcing
 I primarily used official data from the [Kenya National Bureau of Statistics (KNBS) Open Data Portal](https://opendata.knbs.or.ke/beta/databrowser/). As the official national statistical office for Kenya, KNBS is mandated to manage and provide quality statistics for public use. To supplement a data gap identified during data analysis, I integrated data from a publication by the Kenya National Examinations Council (KNEC).
 
 In total, 7 raw files were used:
-
 * 5 CSV files: Containing assessment performance and student enrollment data.
 * 2 PDF reports: Utilized to reconcile data discrepancies:
 ** KNEC KPSEA National Report 2023: Used to determine subject-level candidate numbers.
 ** KNBS 2026 Economic Survey: Used to validate and correct 2025 enrollment data for the Grade 9/Form 1 cohort. (During analysis, an outlier was identified in the CSV data, which upon investigation, was found to report the total number of Junior Secondaty School (JSS) students rather than the Grade 9/Form 1 students).
 
-All raw source files are available in the [raw data folder](/raw_data). The table below provides details on the specific checks done, findings and corresponding actions taken.
+All raw source files are available in the [raw data folder](/raw_data).
+
+#### Data preparation
+To ensure data integrity, the datasets were checked for completeness, duplicates, consistency and validity based on expected data ranges and types. Remarks within the datasets were also reviewed to ensure any relevant context was considered in the analysis. The table below captures the findings from the data preparation work.
 
 
-
-#### Data cleaning & validation
-To ensure data integrity, the datasets were subjected to the cleaning and validation checks for data completeness, duplicates, consistency and validity based on expected ranges. Remarks were also reviewed to ensure any relevant context was considered. The table below captures the finding from this data cleaning & validation exercise:
 
 
 
