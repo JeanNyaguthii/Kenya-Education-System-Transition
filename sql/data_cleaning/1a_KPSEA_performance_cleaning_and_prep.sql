@@ -48,7 +48,6 @@ SELECT
 
   -- Listing out all subjects reported on, to confirm completeness
     ARRAY_AGG(DISTINCT subject ORDER BY subject ASC) AS unique_subjects
-  
 FROM
     cleaned_KPSEA_performance_data),
 
