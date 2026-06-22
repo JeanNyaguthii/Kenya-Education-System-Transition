@@ -28,7 +28,7 @@ In total, 7 raw files were used:
 ** KNEC KPSEA National Report 2023: Used to determine subject-level candidate numbers.
 ** KNBS 2026 Economic Survey: Used to validate and correct 2025 enrollment data for the Grade 9/Form 1 cohort. (During analysis, an outlier was identified in the CSV data, which upon investigation, was found to report the total number of Junior Secondaty School (JSS) students rather than the Grade 9/Form 1 students).
 
-All raw source files are available in the [raw data folder](Kenya-Education-System-Transition/raw_data).
+All raw source files are available in the [raw data folder](/raw_data).
 
 #### Data cleaning & validation
 To ensure data integrity, the datasets were subjected to the cleaning and validation checks for data completeness, duplicates, consistency and validity based on expected ranges. Remarks were also reviewed to ensure any relevant context was considered. The table below captures the finding from this data cleaning & validation exercise:
