@@ -1,34 +1,35 @@
 /*
   Project: Kenya Education System Transition Analaysis | Capstone Project
   Purpose: Data cleaning and preparation of the KPSEA performance dataset
-  Dataset: `project_dataset.enrolment_raw`
+  Dataset: raw_data/20260522_KNBS_Performance level by Subject in Grade 6 KPSEA.csv
 */
 
 -- Prep work: Cleaning up column naming and errors in the data table
 WITH cleaned_KPSEA_performance_data AS (
 	SELECT -- formatting field names in snake_case
-	  `Frequency` AS frequency,
-    `Statistical unit` AS performance_level,
-    `Unit of measure` AS uom,
-    `Breakdown group identifier` AS subject,
-    `Time period` AS year,
-    `Observation` AS value,
-    `Observation status` AS observation_status,
-    `Unit Multiplier` AS unit_multiplier,
-	  `Note for Statistical Unit` AS note_for_statistical_unit,
-	  `Note for Reference Sector` AS note_for_reference_sector,
-	  `Note for Breakdown Group` AS note_for_breakdown_group,
-	  `Note for Dataset` AS note_for_dataset,
-	  `Reference Period Details` AS reference_period_details,
-	  `Note for Education Level` AS note_for_education_level,
-	  `Time Period Details` AS time_period_details,
-	  `Source` AS source
+		`Frequency` AS frequency,
+		`Statistical unit` AS performance_level,
+		`Unit of measure` AS uom,
+		`Breakdown group identifier` AS subject,
+		`Time period` AS year,
+		`Observation` AS value,
+		`Observation status` AS observation_status,
+		`Unit Multiplier` AS unit_multiplier,
+		`Note for Statistical Unit` AS note_for_statistical_unit,
+		`Note for Reference Sector` AS note_for_reference_sector,
+		`Note for Breakdown Group` AS note_for_breakdown_group,
+		`Note for Dataset` AS note_for_dataset,
+		`Reference Period Details` AS reference_period_details,
+		`Note for Education Level` AS note_for_education_level,
+		`Time Period Details` AS time_period_details,
+		`Source` AS source
 	FROM 
-	  capstone-project-497111.performance_data.KPSEA_performance),
+	  capstone-project-497111.performance_data.KPSEA_performance
+),
 
 -- 1. Checking data completeness
 data_completeness AS (
-  SELECT
+SELECT
   -- Checking for nulls in key fields needed for analyses
     COUNTIF(performance_level IS NULL) AS null_performance_levels,
     COUNTIF(subject IS NULL) AS null_subjects,
@@ -48,41 +49,41 @@ data_completeness AS (
   -- Listing out all subjects reported on, to confirm completeness
     ARRAY_AGG(DISTINCT subject ORDER BY subject ASC) AS unique_subjects
   
-  FROM
+FROM
     cleaned_KPSEA_performance_data),
 
 	-- Checking for any subjects where a year of reporting is missing
-	subjects_missing_year_data AS(
-	  SELECT
-	    subject,
-	    COUNT(DISTINCT year) AS no_years_reported_on
-	  FROM 
-	    cleaned_KPSEA_performance_data
-    GROUP BY 
-	    subject
-    HAVING 
-	    no_years_reported_on < (SELECT count (DISTINCT year) FROM cleaned_KPSEA_performance_data)
-	  ),
+subjects_missing_year_data AS(
+SELECT
+	subject,
+	COUNT(DISTINCT year) AS no_years_reported_on
+FROM 
+	cleaned_KPSEA_performance_data
+GROUP BY 
+	subject
+HAVING 
+	no_years_reported_on < (SELECT count (DISTINCT year) FROM cleaned_KPSEA_performance_data)
+),
 	
 -- 2. Checking for duplicates
 duplicates_check AS (
-  SELECT
-    ARRAY_TO_STRING([CAST(year AS string), performance_level, subject, CAST(value AS string)],"_") AS unique_identifier,
+SELECT
+	ARRAY_TO_STRING([CAST(year AS string), performance_level, subject, CAST(value AS string)],"_") AS unique_identifier,
     COUNT(*) AS no_of_records_per_unique_identifier
-  FROM
+FROM
     cleaned_KPSEA_performance_data
-  GROUP BY
+GROUP BY
     unique_identifier
-  HAVING
+HAVING
     no_of_records_per_unique_identifier > 1
 ),
 
 -- 3. Data range checks
 -- Confirming performance data is within the expected range (between 0% and 100%)
 out_of_bounds_values AS (
-  SELECT
-    COUNTIF(value < 0) + COUNTIF(value>100) AS no_out_of_bounds_values
-  FROM
+SELECT
+	COUNTIF(value < 0) + COUNTIF(value>100) AS no_out_of_bounds_values
+FROM
     cleaned_KPSEA_performance_data
 ),
 
@@ -110,28 +111,28 @@ contradictions_check AS (
 -- 5. Checking for inconsistent data
 -- This table creates a column showing the sum of all performance levels per subject per year (since the data is in a distribution format, this should always sum to 100%)
 sum_performance_data_per_subject_per_year AS (
-  SELECT
+SELECT
     SUM (value) AS distribution_total
-  FROM
-    cleaned_KPSEA_performance_data
-  GROUP BY 
-    year,
+FROM
+	cleaned_KPSEA_performance_data
+GROUP BY 
+	year,
     subject
 ),
   
 -- This table then checks above table for cases where the distribution total per subject per year is not equal to 100
 inconsistent_data AS(
-  SELECT
+SELECT
     COUNT(*) AS no_inconsistencies,
-  FROM
+FROM
     sum_performance_data_per_subject_per_year
-  WHERE
+WHERE
     ROUND(distribution_total) <> 100
 ),
 
 -- 6. Checking for any remarks in the remarks columns that could affect how we use the data
 remarks AS (
-  SELECT
+SELECT
     ARRAY_AGG (DISTINCT frequency IGNORE NULLS) AS reporting_frequency,
     ARRAY_AGG (DISTINCT uom IGNORE NULLS) AS units_of_measure,
     ARRAY_AGG (DISTINCT observation_status IGNORE NULLS) AS remarks_on_values,
@@ -144,7 +145,8 @@ remarks AS (
     ARRAY_AGG (DISTINCT note_for_education_level IGNORE NULLS) AS remarks_on_education_level,
     ARRAY_AGG (DISTINCT time_period_details IGNORE NULLS) AS remarks_on_reporting_time_period,
     ARRAY_AGG (DISTINCT source IGNORE NULLS) AS data_source_details
-  FROM cleaned_KPSEA_performance_data
+FROM 
+	cleaned_KPSEA_performance_data
 )
 
 -- Outputs the findings from all the above checks
