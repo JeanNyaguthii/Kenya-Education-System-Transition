@@ -37,13 +37,20 @@ To ensure data integrity, the datasets were checked for completeness, duplicates
 | :--- | :--- | :--- | :---: | :--- | :--- |
 KPSEA performance |	Completeness |	NULL values |	🟢 |	0 null values in key data fields (performance levels, subjects, reporting year, value reported) |	-
 KPSEA performance |	Completeness	|	Period coverage |	🟢 |	Data reported on for all 4 years when KPSEA has been sat to date (2022 to 2025) |	-
-KPSEA performance |	Completeness	|	Subject coverage |	🟢 |	14 subjects reported on. Subjects reported on and naming used consistent in every reporting year |	-
+KPSEA performance |	Completeness	|	Subject coverage |	🟢 |	14 subjects reported on, as expected. Subjects reported on and naming used consistent in every reporting year |	-
 KPSEA performance |	Duplicates	|	Duplicate records |	🟢 |	0 duplicate records |	-
 KPSEA performance |	Data range	|	Out of bounds values |	🟢 |	0 instances of values reported outside of the expected range of score distribution (0% to 100%) |	-
 KPSEA performance |	Data range |	Performance level coverage |	🟢 |	4 performance levels reported on align with KPSEA performance levels |	-
 KPSEA performance	 | Contradictory data |	Contradictory data |	🟢 |	0 contradictory records (i.e., more than 1 value for the same data record) |	-
 KPSEA performance | Consistency |	Sum of distribution of scores |	🟢 |	Sum of distribution of scores (per subject per year) was 100% in every instance |	-
 KPSEA performance |	Remarks |	Remarks columns |	🟢 |	Findings from remarks columns:  • Data is reported on annually  • All values are reported on as a percentage value  • 2025 data is provisional  • The source of all the data is the Kenya National Bureau of Statistics |	-
+| | | | | | |  
+KPSEA 2023 candidates and performance |	Completeness |	NULL values |	🟢 |	0 null values in key data fields (subject, reliability coefficient, number of candidates, mean scores, standard deviation) |	-
+KPSEA 2023 candidates and performance |	Completeness	|	Subject coverage |	🟢 |	14 subjects reported on, as expected |	-
+KPSEA 2023 candidates and performance |	Duplicates	|	Duplicate records |	🟢 |	0 duplicate records |	-
+KPSEA 2023 candidates and performance |	Data range	|	Out of bounds values |	🟢 |	0 instances of negative values or values reported outside of the expected ranges |	-
+| | | | | | |  
+
 
 
 
