@@ -4,7 +4,7 @@
   Dataset: raw_data/20260522_KNBS_Performance level by Subject in Grade 6 KPSEA.csv
 */
 
--- Prep work: Cleaning up column naming and errors in the data table
+-- Prep work: Cleaning up column naming and immediately identifiable errors in the data table
 WITH cleaned_KPSEA_performance_data AS (
 SELECT -- formatting field names in snake_case
 	`Frequency` AS frequency,
