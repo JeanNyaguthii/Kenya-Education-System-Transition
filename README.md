@@ -91,7 +91,23 @@ Secondary school enrolment |	Consistency |	Sum of male and female candidates vs.
 Secondary school enrolment |	Remarks |	Remarks columns |	🟢 |	Findings from remarks columns:  <br> • Data is reported on annually <br>  • All values are reported on as a number <br>  • Multiplier for all numbers reported is thousands <br>  • Data for 2020 is as at the Month of March 2020 <br>  • 2025 data is provisional <br>  • The source of all the data is the Kenya National Bureau of Statistics |	Applied thousands multiplier on all data used for analyses
 
 
-## 📊 Key Findings
+## Data analysis and key findings
+All data transformation and analysis was done in BigQuery, using SQL scripts. These can be found in the [SQL data_analysis directory](\sql\data_analysis). The outputs of the analyses were visualized in the linked [Tableau viz](link). The visualizations can also be found in the [visualizations directory](\visualizations).
+
+### KPSEA performance trends
+#### 1. Overall KPSEA performance
+Subject-level data was aggregated (as a weighted average, considering the number of students assessed for each subject) so as to review what overall KPSEA performance trends have been, since the launch of the KPSEA exams in 2022.
+
+
+
+
+
+Key findings:
+* 
+
+
+
+The KPSEA data was analyzed 
 * **[Finding 1]:** (e.g., Performance in Mathematics showed a X% variance across rural vs. urban districts.)
 * **[Finding 2]:** (e.g., Transition challenges are most pronounced in [specific category] during the first two years.)
 * **[Finding 3]:** (e.g., Identified a correlation between [Variable A] and [Variable B] that suggests a need for targeted policy intervention.)
