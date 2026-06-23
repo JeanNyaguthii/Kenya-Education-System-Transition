@@ -91,30 +91,29 @@ Secondary school enrolment |	Consistency |	Sum of male and female candidates vs.
 Secondary school enrolment |	Remarks |	Remarks columns |	🟢 |	Findings from remarks columns:  <br> • Data is reported on annually <br>  • All values are reported on as a number <br>  • Multiplier for all numbers reported is thousands <br>  • Data for 2020 is as at the Month of March 2020 <br>  • 2025 data is provisional <br>  • The source of all the data is the Kenya National Bureau of Statistics |	Applied thousands multiplier on all data used for analyses
 
 
-## Data analysis and key findings
+## Data analysis and key observations
 All data transformation and analysis was done in BigQuery, using SQL scripts. These can be found in the [SQL data_analysis directory](\sql\data_analysis). The outputs of the analyses were visualized in the linked [Tableau viz](link). The visualizations can also be found in the [visualizations directory](\visualizations).
 
 ### KPSEA performance trends
-#### 1. Overall KPSEA performance
+#### Aggregated KPSEA performance across all students
 Subject-level data was aggregated (as a weighted average, considering the number of students assessed for each subject) so as to review what overall KPSEA performance trends have been, since the launch of the KPSEA exams in 2022.
 
 
+![Aggregated KSPSEA performance](<visualizations/Aggregated KPSEA performance.png>)
 
 
+Key observations:
+* Performance in the KPSEA assessment has overall been getting poorer since its launch. In 2022, when the assessment was first done, majority of students (64%) were performing at either the "Meeting expectations" or "Above Expectations" level. Since, the share of students at these performance levels have gone down to 56% in 2023, 35% in 2024, and 39% in 2025.
+* The percentage of students performing at the "Exceeding Expectations" level has remained most consistent- at 13-14% of students (except for 2024 where this was 8%)
+* The percentage of students at the "Meeting Expectations" performance level has steadily decreased year on year, while the percentage of students at the "Approaching Expectations" performance level has increased year on year
+* 2024 recorded the poorest performance to date, with a significant 21% of students performing at the "Below Expectation" performance level, and another 45% at the "Approaching Expectation" level
 
-Key findings:
-* 
-
-
-
-The KPSEA data was analyzed 
-* **[Finding 1]:** (e.g., Performance in Mathematics showed a X% variance across rural vs. urban districts.)
-* **[Finding 2]:** (e.g., Transition challenges are most pronounced in [specific category] during the first two years.)
-* **[Finding 3]:** (e.g., Identified a correlation between [Variable A] and [Variable B] that suggests a need for targeted policy intervention.)
-
-## 📈 Visualizations
-![Overview of Findings](visualizations/dashboard_overview.png)
-*[Link to your interactive Tableau Public Dashboard here](https://your-tableau-link-here)*
+## Conclusions and recommendations
+Of most concern from the analyses conducted is the overall downward trend in assessment performance for the KPSEA since its launch. Investigation is required as to why this is. Some of the investigative start points as to what the drivers of this performance trend could be:
+ * 2024 recorded the worst performance to date- why was this? Were there any cirriculum changes that could have led to this? Or any other factors that changed in this assessment year that could be learned from to avoid similar performance going forward?
+ * >>>> Subject performance point >>>>>>
+ * What are regional performance trends? Are there regions where performance has been improving overall? What is being done in these 
+ * Does performance differ in public vs. private 
 
 ## 📂 Project Structure
 * `/sql`: Contains the cleaning and analysis queries used to transform the raw data.
