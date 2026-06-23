@@ -58,7 +58,15 @@ No. of exam centres, candidates and mean scores for KCPE |	Contradictory data |	
 No. of exam centres, candidates and mean scores for KCPE |	Consistency |	Sum of male and female candidates vs. total |	🟢 |	0 instances where the sum of the number of female and male candidates did not equal the total number of candidates reported per metric per year |	-
 No. of exam centres, candidates and mean scores for KCPE |	Remarks |	Remarks columns |	🟢 |	Findings from remarks columns: <br> • Data is reported on annually <br> • All values are reported on as a number  <br> • The source of all the data is the Kenya National Bureau of Statistics  <br> • 2025 data is provisional, though as above, unclear why there is any KCPE data from 2025 at all <br> • KCPE was not done in 2020 but was done in March 2021	 | -
 | | | | | | |  
-
+No. of exam centres and candidates for KPSEA |	Completeness |	NULL values |	🟢 |	0 null values in key data fields (data metric, gender, reporting year, value reported) |	-
+No. of exam centres and candidates for KPSEA |	Completeness |	Period coverage |	🟢 |	Data reported on 4 years (2022 to 2025), which aligns with the period when the KPSEA exam has been administered |	-
+No. of exam centres and candidates for KPSEA |	Completeness |	Gender coverage |	🟢 |	0 cases of missing gender data	-
+No. of exam centres and candidates for KPSEA |	Duplicates |	Duplicate records |	🟢 |	0 duplicate records |	-
+No. of exam centres and candidates for KPSEA |	Data range |	Out of bounds values |	🟢 |	0 instances of negative or non-integer values for number of candidates and assessment centres |	-
+No. of exam centres and candidates for KPSEA |	Contradictory data |	Contradictory data |	🟢 |	0 contradictory records (i.e., more than 1 value for the same data record) |	-
+No. of exam centres and candidates for KPSEA |	Consistency |	Sum of male and female candidates vs. total |	🟢 |	0 instances where the sum of the number of female and male candidates did not equal the total number of candidates reported per metric per year |	-
+No. of exam centres and candidates for KPSEA |	Remarks |	Remarks columns |	🟢 |	Findings from remarks columns: <br>  • Data is reported on annually <br> • All values are reported on as a number <br> • The source of all the data is the Kenya National Bureau of Statistics <br> • 2025 data is provisional |	-
+| | | | | | |  
 
 
 ## 📊 Key Findings
