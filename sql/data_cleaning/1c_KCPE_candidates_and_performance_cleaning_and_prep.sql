@@ -6,7 +6,7 @@
 
 -- Prep work: Cleaning up column naming and immediately identifiable errors in the data table
 WITH cleaned_KCPE_data AS (
-	SELECT 
+	SELECT -- formatting field names in snake_case
 		`Frequency _A_` AS frequency,
 		`Statistical unit _REG_KCPE_` AS data_metric,
 		`Sex _M_` AS gender,
