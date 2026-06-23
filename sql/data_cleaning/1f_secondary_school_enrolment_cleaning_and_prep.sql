@@ -4,7 +4,8 @@
   Dataset: raw_data/20260522_KNBS_Enrolment in Secondary Schools by Class and Gender.csv
 */
 
--- Prep work: Cleaning up column naming and immediately identifiable errors in the data tableWITH cleaned_secondary_enrolment_data AS (
+-- Prep work: Cleaning up column naming and immediately identifiable errors in the data table
+WITH cleaned_secondary_enrolment_data AS (
 	SELECT -- formatting field names in snake_case
 	  `Frequency _A_` AS frequency,
 	  `Grade _ year of study __T_` AS grade_or_class,
@@ -23,7 +24,8 @@
 	  `Time Period Details` AS time_period_details,
 	  `Source` AS source
 	FROM 
-	  capstone-project-497111.enrolment_data.secondary_school_enrolment_data),
+	  capstone-project-497111.enrolment_data.secondary_school_enrolment_data
+),
 
 -- 1. Checking data completeness
 data_completeness AS (
