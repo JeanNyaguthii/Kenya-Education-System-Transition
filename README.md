@@ -108,6 +108,11 @@ Key observations:
 * The percentage of students at the "Meeting Expectations" performance level has steadily decreased year on year, while the percentage of students at the "Approaching Expectations" performance level has increased year on year
 * 2024 recorded the poorest performance to date, with a significant 21% of students performing at the "Below Expectation" performance level, and another 45% at the "Approaching Expectation" level
 
+#### Aggregated KCPE performance across all students
+To provide broader context for the KPSEA results, I analyzed historical data from the Kenya Certificate of Primary Education (KCPE)—the national exam marking the transition in the previous education system (the 8-4-4 system). While the KPSEA uses performance levels, the phased-out KCPE exam was graded via subject-specific percentage scores and letter grades. For some comparability, I focused on annual national mean score trends for the KCPE, which could be somewhat comparable to the average performance levels already assessed for KPSEA.
+
+![Aggregated KCPE performance](<visualizations/KCPE Mean Scores.png>)
+
 ## Conclusions and recommendations
 Of most concern from the analyses conducted is the overall downward trend in assessment performance for the KPSEA since its launch. Investigation is required as to why this is. Some of the investigative start points as to what the drivers of this performance trend could be:
  * 2024 recorded the worst performance to date- why was this? Were there any cirriculum changes that could have led to this? Or any other factors that changed in this assessment year that could be learned from to avoid similar performance going forward?
