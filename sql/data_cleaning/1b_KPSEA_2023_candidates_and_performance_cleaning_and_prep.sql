@@ -7,19 +7,19 @@
 -- Prep work: Cleaning up column naming and immediately identifiable errors in the data table
 WITH cleaned_2023_KPSEA_performance_data AS (
 	SELECT -- formatting field names in snake_case
-	  `Subject` AS subject,
-    `KR-20 Reliability Coefficient` AS reliability_coefficient,
-    `ALL_Sat` AS total_no_students, -- The total number of students who sat for the subject's exam
-    `ALL_Mean` AS mean_scores_all_students, -- The mean scores for the subject, across all students in the country who sat for the exam
-    `ALL_SD` AS standard_dev_all_students, -- The standard deviation from the mean scores for the subject, across all students in the country who sat for the exam
-    `GIRLS_Sat` AS no_female_students,
-    `GIRLS_Mean` AS mean_scores_female_students,
-    `GIRLS_SD` AS standard_dev_female_students,
-    `BOYS_Sat` AS no_male_students,
-    `BOYS_Mean` AS mean_scores_male_students,
-    `BOYS_SD` AS standard_dev_male_students
+	    `Subject` AS subject,
+	    `KR-20 Reliability Coefficient` AS reliability_coefficient,
+	    `ALL_Sat` AS total_no_students, -- The total number of students who sat for the subject's exam
+	    `ALL_Mean` AS mean_scores_all_students, -- The mean scores for the subject, across all students in the country who sat for the exam
+	    `ALL_SD` AS standard_dev_all_students, -- The standard deviation from the mean scores for the subject, across all students in the country who sat for the exam
+	    `GIRLS_Sat` AS no_female_students,
+	    `GIRLS_Mean` AS mean_scores_female_students,
+	    `GIRLS_SD` AS standard_dev_female_students,
+	    `BOYS_Sat` AS no_male_students,
+	    `BOYS_Mean` AS mean_scores_male_students,
+	    `BOYS_SD` AS standard_dev_male_students
 	FROM 
-	  `capstone-project-497111.performance_data.2023_KPSEA_performance_candidates_per_subj`
+		`capstone-project-497111.performance_data.2023_KPSEA_performance_candidates_per_subj`
 ),
 
 -- Data quality checks
@@ -43,9 +43,9 @@ data_quality_metrics AS (
     (SELECT
       subject,
       COUNT(*) AS no_of_records_per_subject
-    FROM
+     FROM
       cleaned_2023_KPSEA_performance_data
-    GROUP BY
+     GROUP BY
       subject)
   WHERE
     no_of_records_per_subject > 1) AS no_of_duplicates,
