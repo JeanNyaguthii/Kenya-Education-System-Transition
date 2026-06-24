@@ -113,6 +113,16 @@ To provide broader context for the KPSEA results, I analyzed historical data fro
 
 ![Aggregated KCPE performance](<visualizations/KCPE Mean Scores.png>)
 
+Key observations:
+* Over the 9 final years of KCPE's utilization, performance remained quite stable, with national mean scores within a narrow range between 51.51 and 53.18.
+* As per the [KNEC KCPE Result Guidelines](https://www.knec.ac.ke/wp-content/uploads/2023/11/KCPE-Results-Guidelines.pdf), over the period considered, the average mean scores consistently corresponded to a 'C' grade
+
+#### KPSEA performance by subject
+Subject-level KPSEA performance data was reviewed, to check for any trends of interest; specifically of interest- to see if any insight could be gathered as to subject contributions towards the overall performance trends observed.
+![KPSEA Performance By Subject](<visualizations/KPSEA Performance By Subject.png>)
+
+
+
 ## Conclusions and recommendations
 Of most concern from the analyses conducted is the overall downward trend in assessment performance for the KPSEA since its launch. Investigation is required as to why this is. Some of the investigative start points as to what the drivers of this performance trend could be:
  * 2024 recorded the worst performance to date- why was this? Were there any cirriculum changes that could have led to this? Or any other factors that changed in this assessment year that could be learned from to avoid similar performance going forward?
