@@ -121,6 +121,11 @@ Key observations:
 Subject-level KPSEA performance data was reviewed, to check for any trends of interest; specifically of interest- to see if any insight could be gathered as to subject contributions towards the overall performance trends observed.
 ![KPSEA Performance By Subject](<visualizations/KPSEA Performance By Subject.png>)
 
+* Overall, performance trends are quite similar across all subjects, and mirror the aggregated performance trend i.e., the number of students in the "Approaching Expectations" and "Below Expectations" are overall increasing- with the highest number of studnets at these performance levels seen in 2024 for all subjects except Creative Arts and Social Sciences- where the most recent year had the highest number of students at these levels
+* Kiswahilli / Kenya Sign Language (KSL) has consistently had the highest percentage of students in the "Meeting Expectation" or "Exceeding Expectation" performance levels (with the exception of 2025 where 52% of students who sat for the English exam sat at these performance levels, against Kiswahili / KSL's 51%)
+* Mathematics has concistently had the the highest percentage of students in the "Below Expectation" or "Approaching Expectation" performance levels (with the exception of 2025 where 66% of students who sat for the Creative Arts and Social Studies exam sat at these performance levels, against Mathematics' 64%)
+* Creative Arts and Social Studies has shown a concerning trend of consistent decrease in performance year on year- with each year marking a greater number of students in the "Approaching Expectations" and "Below Expectations" performance levels, and fewer in the "Meeting Expectations" and "Above Expectations" performance levels
+
 
 
 ## Conclusions and recommendations
