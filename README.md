@@ -23,7 +23,7 @@ I primarily used official data from the [Kenya National Bureau of Statistics (KN
 * 5 CSV files: Containing assessment performance and student enrollment data.
 * 2 PDF reports: Utilized to reconcile data discrepancies:
   * KNEC KPSEA National Report 2023: Used to determine subject-level candidate numbers.
-  * KNBS 2026 Economic Survey: Used to validate and correct 2025 enrollment data for the Grade 9/Form 1 cohort. <details> The 2025 data points for this cohort were sourced from the KNBS Economic Survey because the CSVs contained outlier values that were flagged during the analysis phase. From reviewing both data soures, it was clear that the CSV erroneously reported the total number of students enrolled for Junior Secondaty School (JSS) as the number of students enrolled for Grade 9/Form 1 for the same year. </details>
+  * KNBS 2026 Economic Survey: Used to validate and correct grade 8 enrolment data for the year 2025, and cross-reference and populate Grade 9/Form 1 enrolment data. <details> Grade 8 2025 enrolment data points were sourced from the KNBS Economic Survey because the CSV dataset contained outlier values that were flagged during the analysis phase. From reviewing both data soures, it was clear that the CSV erroneously reported the total number of students enrolled for Junior Secondaty School (JSS) as the number of students enrolled for Grade 8 for the same year. Grade 9/From 1 2025 enrolment data was missing from the CSVs, hence the need for cross-referencing and population from the KNBS Economic Survey data. </details>
 
 All raw source files are available in the [raw data folder](/raw_data).
 
@@ -121,10 +121,17 @@ Key observations:
 Subject-level KPSEA performance data was reviewed, to check for any trends of interest; specifically of interest- to see if any insight could be gathered as to subject contributions towards the overall performance trends observed.
 ![KPSEA Performance By Subject](<visualizations/KPSEA Performance By Subject.png>)
 
+Key observations:
 * Overall, performance trends are quite similar across all subjects, and mirror the aggregated performance trend i.e., the number of students in the "Approaching Expectations" and "Below Expectations" are overall increasing- with the highest number of studnets at these performance levels seen in 2024 for all subjects except Creative Arts and Social Sciences- where the most recent year had the highest number of students at these levels
 * Kiswahilli / Kenya Sign Language (KSL) has consistently had the highest percentage of students in the "Meeting Expectation" or "Exceeding Expectation" performance levels (with the exception of 2025 where 52% of students who sat for the English exam sat at these performance levels, against Kiswahili / KSL's 51%)
 * Mathematics has concistently had the the highest percentage of students in the "Below Expectation" or "Approaching Expectation" performance levels (with the exception of 2025 where 66% of students who sat for the Creative Arts and Social Studies exam sat at these performance levels, against Mathematics' 64%)
 * Creative Arts and Social Studies has shown a concerning trend of consistent decrease in performance year on year- with each year marking a greater number of students in the "Approaching Expectations" and "Below Expectations" performance levels, and fewer in the "Meeting Expectations" and "Above Expectations" performance levels
+
+### Retention trends
+The second part of the analysis was focused on retention rates. To visualize this, retention curves were plotted for each cohort, indexing the starting grade size at 100% and tracking the subsequent year-over-year enrollment relative to that baseline. As a note, for 8-4-4 system cohorts where Grade 1 enrollment data was unavailable, the earliest available grade was used as the 100% reference point. This was to provide a sufficient sample size, as only two 8-4-4 cohorts had data starting at Grade 1 enrollment.
+
+The retention rates were plotted in two graphs: one for 8-4-4 cohorts (Grade 1 entry prior to 2017) and one for CBE cohorts (Grade 1 entry from 2017 onwards).
+
 
 
 
