@@ -92,55 +92,59 @@ Secondary school enrolment |	Remarks |	Remarks columns |	🟢 |	Findings from re
 
 
 ## Data analysis and key observations
-All data transformation and analysis was done in BigQuery, using SQL scripts. These can be found in the [SQL data_analysis directory](\sql\data_analysis). The outputs of the analyses were visualized in the linked [Tableau viz](link). The visualizations can also be found in the [visualizations directory](\visualizations).
+All data transformation and analysis was done in BigQuery, using SQL scripts. These are in the [SQL data_analysis directory](\sql\data_analysis). The outputs of the analyses were visualized in the linked [Tableau viz](link), images of which are also in the [visualizations directory](\visualizations).
 
 ### KPSEA performance trends
-#### Aggregated KPSEA performance across all students
-Subject-level data was aggregated (as a weighted average, considering the number of students assessed for each subject) so as to review what overall KPSEA performance trends have been, since the launch of the KPSEA exams in 2022.
+The first part of the analysis focused on assessing student performance trends.
 
+#### Aggregated KPSEA performance across all students
+Subject-level KPSEA data was aggregated as a weighted average, accounting for the number of students assessed per subject, to evaluate performance trends since the launch of the KPSEA in 2022.
 
 ![Aggregated KSPSEA performance](<visualizations/Aggregated KPSEA performance.png>)
 
 
 Key observations:
-* Performance in the KPSEA assessment has overall been getting poorer since its launch. In 2022, when the assessment was first done, majority of students (64%) were performing at either the "Meeting expectations" or "Above Expectations" level. Since, the share of students at these performance levels have gone down to 56% in 2023, 35% in 2024, and 39% in 2025.
-* The percentage of students performing at the "Exceeding Expectations" level has remained most consistent- at 13-14% of students (except for 2024 where this was 8%)
-* The percentage of students at the "Meeting Expectations" performance level has steadily decreased year on year, while the percentage of students at the "Approaching Expectations" performance level has increased year on year
-* 2024 recorded the poorest performance to date, with a significant 21% of students performing at the "Below Expectation" performance level, and another 45% at the "Approaching Expectation" level
+* **Declining performance trend:** Since its launch in 2022, there has been a notable shift in student distribution across the four performance levels. Majority (64%) of students achieved "Meeting" or "Exceeding" expectations performance levels in 2022. However, the combined share of these two performance levels dropped to 56% in 2023, an all-time low of 35% in 2024 and 39% in 2025.
+* **Shift of student share to lower-performance levels:** The share of students at the "Approaching Expectations" performance level has consistently increased year on year, while the share of students in the "Meeting Expectations" level has consistently decreased.
+* **2024 performance dip:** 2024 recorded the poorest performance to date, with a significant 21% of students performing at the "Below Expectation" performance level, and another 45% at the "Approaching Expectation" level- a combined total of 66% of students were not performing at the "Meeting Expectations" level or above.
+* **Consistency in high achievement:** The share of students at the "Exceeding Expectations" level has remained quite stable, consistently comprising 13–14% of students, with the exception of an 8% dip in 2024.
 
 #### Aggregated KCPE performance across all students
-To provide broader context for the KPSEA results, I analyzed historical data from the Kenya Certificate of Primary Education (KCPE)—the national exam marking the transition in the previous education system (the 8-4-4 system). While the KPSEA uses performance levels, the phased-out KCPE exam was graded via subject-specific percentage scores and letter grades. For some comparability, I focused on annual national mean score trends for the KCPE, which could be somewhat comparable to the average performance levels already assessed for KPSEA.
+To provide broader context for the KPSEA results, historical data from the Kenya Certificate of Primary Education (KCPE)—the national exam marking the primary to highscool transition in the 8-4-4 system- was reviewed. While the KPSEA uses performance levels to assess performance, the phased-out KCPE exam was graded via subject-specific percentage scores and letter grades.
 
 ![Aggregated KCPE performance](<visualizations/KCPE Mean Scores.png>)
 
 Key observations:
-* Over the 9 final years of KCPE's utilization, performance remained quite stable, with national mean scores within a narrow range between 51.51 and 53.18.
-* As per the [KNEC KCPE Result Guidelines](https://www.knec.ac.ke/wp-content/uploads/2023/11/KCPE-Results-Guidelines.pdf), over the period considered, the average mean scores consistently corresponded to a 'C' grade
+* **Performance stability:** Over the final nine years of the KCPE, performance remained stable, with national mean scores within a narrow range between 51.51 and 53.18. As per the [KNEC KCPE Result Guidelines](https://www.knec.ac.ke/wp-content/uploads/2023/11/KCPE-Results-Guidelines.pdf), over the period considered, the average mean scores consistently corresponded to a 'C' grade.
 
 #### KPSEA performance by subject
-Subject-level KPSEA performance data was reviewed, to check for any trends of interest; specifically of interest- to see if any insight could be gathered as to subject contributions towards the overall performance trends observed.
+Subject-level KPSEA performance data was reviewed, primarily to gain insight on subject contributions towards the overall performance trends observed.
 ![KPSEA Performance By Subject](<visualizations/KPSEA Performance By Subject.png>)
 
 Key observations:
-* Overall, performance trends are quite similar across all subjects, and mirror the aggregated performance trend i.e., the number of students in the "Approaching Expectations" and "Below Expectations" are overall increasing- with the highest number of studnets at these performance levels seen in 2024 for all subjects except Creative Arts and Social Sciences- where the most recent year had the highest number of students at these levels
-* Kiswahilli / Kenya Sign Language (KSL) has consistently had the highest percentage of students in the "Meeting Expectation" or "Exceeding Expectation" performance levels (with the exception of 2025 where 52% of students who sat for the English exam sat at these performance levels, against Kiswahili / KSL's 51%)
-* Mathematics has concistently had the the highest percentage of students in the "Below Expectation" or "Approaching Expectation" performance levels (with the exception of 2025 where 66% of students who sat for the Creative Arts and Social Studies exam sat at these performance levels, against Mathematics' 64%)
-* Creative Arts and Social Studies has shown a concerning trend of consistent decrease in performance year on year- with each year marking a greater number of students in the "Approaching Expectations" and "Below Expectations" performance levels, and fewer in the "Meeting Expectations" and "Above Expectations" performance levels
+* **Declining performance trend:** Overall, performance trends across subjects mirror the aggregate downward trend, with 2024 marking the peak of students in lower-performance levels across nearly all subjects-- with the exception of Creative Arts and Social Sciences- where 2025 had the highest number of students at the "Below" or "Approaching" expectation levels.
+* **Top-performing subject:** Kiswahilli / Kenya Sign Language (KSL) have consistently had the highest percentage of students in the top performance levels -"Meeting" or "Exceeding" expectations, though English overtook it slightly in 2025 (52% vs. 51%).
+* **Poorest-performing subject:** Mathematics has recorded the highest persistent concentration of students in the "Below" or "Approaching" expectation levels, with the exception of 2025 where 66% of Creative Arts and Social Studies students were in these performance levels, against Mathematics' 64%.
+* **Creative Arts and Social Studiees decline:** Creative Arts and Social Studies shows the most concerning trajectory, with a steady annual increase in the share of students in lower-performance levels and a corresponding decrease in the student share in higher-performance levels.
 
 ### Retention trends
-The second part of the analysis was focused on retention rates. To visualize this, retention curves were plotted for each cohort, indexing the starting grade size at 100% and tracking the subsequent year-over-year enrollment relative to that baseline. As a note, for 8-4-4 system cohorts where Grade 1 enrollment data was unavailable, the earliest available grade was used as the 100% reference point. This was to provide a sufficient sample size, as only two 8-4-4 cohorts had data starting at Grade 1 enrollment.
+The second component of the analysis was a review of student retention rates. To visualize this, retention curves were plotted for each cohort, indexing the starting grade size at 100% and tracking the subsequent year-over-year enrollment relative to that baseline. As a note, for 8-4-4 system cohorts where Grade 1 enrollment data was unavailable, the earliest available grade was used as the 100% reference point. This was to provide a sufficient sample size, as only two 8-4-4 cohorts had data starting at Grade 1 enrollment.
 
 The retention rates were plotted in two graphs: one for 8-4-4 cohorts (Grade 1 entry prior to 2017) and one for CBE cohorts (Grade 1 entry from 2017 onwards).
 ![8-4-4 Student Retention Trends](<visualizations/8-4-4 Student Retention Rates.png>)
 
 Key Observations:
-* Nearly all cohorts exhibit a drop in cohort student size as they approach, and during the transition from primary school (Standard 8) into highschool (Form 1). Outside of these drops, student retention rates remain relatively stable, though with some variation
+* **Highschool transition drop:** Nearly all 8-4-4 student cohorts exhibit a visible drop in cohort size as they approach, and during, the transition from primary school (Standard 8) into highschool (Form 1).
+* **Stable early-mid primary and highschool cohort sizes:** Outside of the primary to highschool transition, student cohort sizes remain relatively stable.
 
 ![CBE Student Retention Trends](<visualizations/CBE Student Retention Rates.png>)
 
 Key Observations:
-* ...
+* **Early-on attrition in initial CBE Cohorts:** In the first (CBE) cohorts (2017–2018), approximately 10% attrition was observed within the first three grades. However, following this initial attrition, cohort sizes remained stable, only showing further attrition as students transitioned into and in junior secondary school
+* **Improving retention in recent cohorts:** Overall, CBE retention trends are positive, with cohorts joining Grade 1 from 2019 onwards having had no overall attrition to date
 
+**Important note**
+As of 2026, the first CBE cohort is just entering senior secondary school (Grade 10). Consequently, there is currently no data to analyze the transition from junior to senior secondary school—a critical point where the required change in schools may impact retention rates.
 
 
 ## Conclusions and recommendations
