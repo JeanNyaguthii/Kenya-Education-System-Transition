@@ -131,7 +131,15 @@ Key observations:
 The second part of the analysis was focused on retention rates. To visualize this, retention curves were plotted for each cohort, indexing the starting grade size at 100% and tracking the subsequent year-over-year enrollment relative to that baseline. As a note, for 8-4-4 system cohorts where Grade 1 enrollment data was unavailable, the earliest available grade was used as the 100% reference point. This was to provide a sufficient sample size, as only two 8-4-4 cohorts had data starting at Grade 1 enrollment.
 
 The retention rates were plotted in two graphs: one for 8-4-4 cohorts (Grade 1 entry prior to 2017) and one for CBE cohorts (Grade 1 entry from 2017 onwards).
+![8-4-4 Student Retention Trends](<visualizations/8-4-4 Student Retention Rates.png>)
 
+Key Observations:
+* Nearly all cohorts exhibit a drop in cohort student size as they approach, and during the transition from primary school (Standard 8) into highschool (Form 1). Outside of these drops, student retention rates remain relatively stable, though with some variation
+
+![CBE Student Retention Trends](<visualizations/CBE Student Retention Rates.png>)
+
+Key Observations:
+* ...
 
 
 
