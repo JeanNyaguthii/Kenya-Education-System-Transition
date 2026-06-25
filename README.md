@@ -143,8 +143,7 @@ Key Observations:
 * **Early-on attrition in initial CBE Cohorts:** In the first (CBE) cohorts (2017–2018), approximately 10% attrition was observed within the first three grades. However, following this initial attrition, cohort sizes remained stable, only showing further attrition as students transitioned into and in junior secondary school
 * **Improving retention in recent cohorts:** Overall, CBE retention trends are positive, with cohorts joining Grade 1 from 2019 onwards having had no overall attrition to date
 
-**Important note**
-As of 2026, the first CBE cohort is just entering senior secondary school (Grade 10). Consequently, there is currently no data to analyze the transition from junior to senior secondary school—a critical point where the required change in schools may impact retention rates.
+**Important note:** As of 2026, the first CBE cohort is just entering senior secondary school (Grade 10). Consequently, there is currently no data to analyze the transition from junior to senior secondary school—a critical point where the required change in schools may impact retention rates.
 
 
 ## Conclusions and recommendations
