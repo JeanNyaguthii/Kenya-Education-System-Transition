@@ -147,11 +147,22 @@ Key Observations:
 
 
 ## Conclusions and recommendations
-Of most concern from the analyses conducted is the overall downward trend in assessment performance for the KPSEA since its launch. Investigation is required as to why this is. Some of the investigative start points as to what the drivers of this performance trend could be:
- * 2024 recorded the worst performance to date- why was this? Were there any cirriculum changes that could have led to this? Or any other factors that changed in this assessment year that could be learned from to avoid similar performance going forward?
- * >>>> Subject performance point >>>>>>
- * What are regional performance trends? Are there regions where performance has been improving overall? What is being done in these 
- * Does performance differ in public vs. private 
+
+Overall, the analysis indicates that with the CBE system so far, student retention is high, but KPSEA performance has consistently declined since 2022. While current retention rates are encouraging, the true stress test will occur as cohorts transition into senior secondary school—a phase requiring school changes, that has correlated with attrition in the previous education system (8-4-4).
+
+Recommendations
+To better understand and inform policies and changes that could reverse any observed early negative trends, I recommend prioritizing the following areas of study, most critically on student performance:
+* **Root cause analysis of the 2024 performance dip:** 2024 represents a critical negative outlier in the dataset. Future research should isolate whether this decline was driven by specific curriculum adjustments, changes in the assessment methodology, external socio-economic factors or other factors that impacted students during that academic cycle.
+* **Curriculum review for Creative Arts & Social Studies:** Performance in Creative Arts and Social Studies has shown a disproportionate, steady decline. A targeted review of specific curriculum units within these subjects are necessary to determine if factors like content complexity, teaching methods or resource availability are impacting student results.
+* **Geographic and school type segmentation:** Segmenting data by county or region and school type (e.g., public vs. private, boarding vs. day) could help identify high-performing regions and school models whose best practices could be scaled to to improve performance elsewhere.
+ * **Continued retention monitoring:** As the first CBE cohorts enter senior secondary school in 2026, monitoring of this transition is very important. Specifically, to determine if the physical change of schools triggers attrition, particularly given the added complexity of the new school selection process—a transition that was already a vulnerable stage for students.
+ * **Senior secondary school transition:** With the first cohort entering senior secondary school doing so this year (2026), there is limited data available on senior seconday school. However, this is an area that would require critical monitoring and investigation, with some areas for this suggested below:
+   * **Pathway alignment and mapping:** CBE introduced specialized study pathways for senior secondary school. It would be important to evaluate if students are being correctly mapped to their chosen pathways (STEM, Social Sciences, or Arts & Sports Science) based on their Junior Secondary School (JSS) selections, performance and interests.
+   * **Retention and attrition risks:** Is the new cirriculum with all its changes (early-specialization, different assessment approaches etc.) driving students to leave the system entirely even after the transition point?
+   * **Performance and equity analysis:** Data should be segmented by learning pathway, region, and school type (e.g., public vs. private). This will help identify if specific pathways, regions or school types are creating performance silos where certain groups of students are systematically underserved.
+   * **Resource and infrastructure equity:** It is important to analyze whether schools have the necessary resources—such as specialized labs or equipment—to support their assigned pathways.
+   * **Teaching force readiness:** As senior secondary curriculum complexity increases, it is critical to assess if the current teaching workforce is prepared to deliver specialized, pathway-specific instruction. Completion and effectiveness of tacher training should be reviewed.
+   * **Transition to further education:** We must investigate how well the CBE curriculum aligns with the requirements of tertiary institutions and universities, both locally and internationally. A critical question that will emerge is whether the transition to further education is a smooth, transparent process or if students encounter hurdles in meeting higher education entry standards.
 
 ## 📂 Project Structure
 * `/sql`: Contains the cleaning and analysis queries used to transform the raw data.
