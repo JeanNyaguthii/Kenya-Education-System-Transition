@@ -164,7 +164,8 @@ To better understand, and inform policies and changes that could reverse any obs
    * **Teacher readiness:** As senior secondary curriculum complexity increases, it is critical to assess if teachers are prepared to deliver the required instruction- completion and effectiveness of tacher training should be reviewed. As a note- this would apply both to both senior secondary and primary / junior secondary schools.
    * **Transition to further education:** We must investigate how well the CBE curriculum aligns with the requirements of tertiary education institutions (universities, colleges, training institutes etc.), both locally and internationally. A critical question that will emerge is whether the transition to higher education is a smooth, transparent process or if students encounter hurdles in meeting entry standards.
 
-## 📂 Project Structure
-* `/sql`: Contains the cleaning and analysis queries used to transform the raw data.
+## 📂 Project structure
+* `/docs`: Contains a context document with some context gathered on the CBE system, and links to documents with additional detail on the same.
+* `/raw_data`: Contains all the raw datasets that were utilized for the project.
+* `/sql`: Contains the SQL cleaning and analysis queries used to quality check and clean the raw datasets explored.
 * `/visualizations`: Contains exported snapshots of the final Tableau dashboard.
-* `/docs`: Detailed project report and methodology.
