@@ -153,7 +153,7 @@ Key Observations:
 
 Overall, the analysis indicates that with the CBE system so far, student retention is high, but KPSEA performance has consistently declined since 2022. While current retention rates are encouraging, the true stress test will occur as cohorts transition into senior secondary school—a phase requiring school changes, that has correlated with attrition in the previous education system (8-4-4).
 
-### Recommendations
+### Recommendations: Analytical opportunities for policy makers
 To better understand, and inform policies and changes that could reverse any observed early negative trends, I recommend prioritizing the following areas of study, most critically on student performance:
 * **Root cause analysis of the 2024 performance dip:** 2024 represents a critical negative outlier in the dataset. Looking more closely at this could reveal whether this was likely  driven by specific curriculum adjustments, changes in the assessment methodology, external socio-economic factors or other factors that impacted students during that academic cycle, which could inform prevention of similar challenges for other cohorts.
 * **Curriculum review for Creative Arts & Social Studies:** Performance in Creative Arts and Social Studies has shown a steady decline year on year. A targeted review of specific curriculum units within these subjects is needed to determine if factors like content complexity, teaching methods or resource availability are impacting student results.
