@@ -118,7 +118,9 @@ Key observations:
 * **Performance stability:** Over the final nine years of the KCPE, performance remained stable, with national mean scores within a narrow range between 51.51 and 53.18. As per the [KNEC KCPE Result Guidelines](https://www.knec.ac.ke/wp-content/uploads/2023/11/KCPE-Results-Guidelines.pdf), over the period considered, the average mean scores consistently corresponded to a 'C' grade.
 
 #### KPSEA performance by subject
-Subject-level KPSEA performance data was reviewed, primarily to gain insight on subject contributions towards the overall performance trends observed.
+Subject-level KPSEA performance data was reviewed, to gain insight on subject contributions towards the overall performance trends observed.
+Important note: Subject-level candidature data was only available for 2023. As such, subject-specific candidate ratios were calculated for 2023, and applied as a representative candidate ratio proxy for the other years in the analysis.
+
 ![KPSEA Performance By Subject](<visualizations/KPSEA Performance By Subject.png>)
 
 Key observations:
@@ -131,6 +133,7 @@ Key observations:
 The second component of the analysis was a review of student retention rates. To visualize this, retention curves were plotted for each cohort, indexing the starting grade size at 100% and tracking the subsequent year-over-year enrollment relative to that baseline. As a note, for 8-4-4 system cohorts where Grade 1 enrollment data was unavailable, the earliest available grade was used as the 100% reference point. This was to provide a sufficient sample size, as only two 8-4-4 cohorts had data starting at Grade 1 enrollment.
 
 The retention rates were plotted in two graphs: one for 8-4-4 cohorts (Grade 1 entry prior to 2017) and one for CBE cohorts (Grade 1 entry from 2017 onwards).
+
 ![8-4-4 Student Retention Trends](<visualizations/8-4-4 Student Retention Rates.png>)
 
 Key Observations:
