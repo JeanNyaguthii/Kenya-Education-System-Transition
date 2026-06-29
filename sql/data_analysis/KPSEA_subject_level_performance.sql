@@ -10,7 +10,7 @@
   This script organizes performance data into the 5 KPSEA subjects by calculating the weighted average performance by weighting subject-level scores against the number of candidates per subject. 
   This approach accounts for the fact that candidate participation levels differ across the 14 KPSEA subjects.
 
-  Important note: Subject-level candidature data was only available for 2023. To maintain consistency, I calculated subject-specific candidate ratios for 2023 and applied them as a representative proxy for all other years in the analysis. 
+  Important note: Subject-level candidature data was only available for 2023. As such, subject-specific candidate ratios were calculated for 2023, and applied as a representative candidate ratio proxy for the other years in the analysis.
 */
 
 -- Using 2023 data to determine distribution of students across subjects
