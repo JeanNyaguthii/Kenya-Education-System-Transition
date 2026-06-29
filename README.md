@@ -92,7 +92,7 @@ Secondary school enrolment |	Remarks |	Remarks columns |	🟢 |	Findings from re
 
 
 ## Data analysis and key observations
-All data transformation and analysis was done in BigQuery, using SQL scripts. These are in the [SQL data_analysis directory](sql\data_analysis). The outputs of the analyses were visualized in Tableau, extracts of which are in the [visualizations directory](\visualizations).
+All data transformation and analysis was done in BigQuery, using SQL scripts. These are in the [SQL data_analysis directory](sql/data_analysis). The outputs of the analyses were visualized in Tableau, extracts of which are in the [visualizations directory](visualizations).
 
 ### KPSEA performance trends
 The first part of the analysis focused on assessing student performance trends.
