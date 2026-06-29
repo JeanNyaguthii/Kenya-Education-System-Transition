@@ -172,7 +172,7 @@ To better understand, and inform policies and changes that could reverse any obs
    * **Transition to further education:** We must investigate how well the CBE curriculum aligns with the requirements of tertiary education institutions (universities, colleges, training institutes etc.), both locally and internationally. A critical question that will emerge is whether the transition to higher education is a smooth, transparent process or if students encounter hurdles in meeting entry standards.
 
 ## 📂 Project structure
-* `/docs`: Contains a context document with some context gathered on the CBE system, and links to documents with additional detail on the same.
-* `/raw_data`: Contains all the raw datasets that were utilized for the project.
-* `/sql`: Contains the SQL cleaning and analysis queries used to quality check and clean the raw datasets explored.
+* `/docs`: Contains a contextual background document on the Competency-Based Education (CBE) system, including reference documentation.
+* `/raw_data`: The primary, unaltered datasets used for this project.
+* `/sql`: The SQL scripts used for data quality checks, data cleaning, and analytical transformations.
 * `/visualizations`: Contains exported snapshots of the final Tableau dashboard.
