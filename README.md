@@ -28,7 +28,7 @@ I primarily used official data from the [Kenya National Bureau of Statistics (KN
 All raw source files are available in the [raw data folder](/raw_data).
 
 #### Data preparation
-To confirm the data's reliability prior to use, the datasets were checked for completeness, duplicates, consistency and validity based on expected data ranges and types. Remarks within the datasets were also reviewed to ensure any relevant context was considered in the analysis. All data quality checks and cleaning was done in BigQuery, using SQL scripts. These can be found in the [SQL data_cleaning directory](\sql\data_cleaning).
+To confirm the data's reliability prior to use, the datasets were checked for completeness, duplicates, consistency and validity based on expected data ranges and types. Remarks within the datasets were also reviewed to ensure any relevant context was considered in the analysis. All data quality checks and cleaning was done in BigQuery, using SQL scripts. These can be found in the [SQL data_cleaning directory](sql/data_cleaning).
 
 The table below captures the findings from the data preparation work.
 
