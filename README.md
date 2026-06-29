@@ -9,7 +9,7 @@ My key analytical objectives were:
 1. Performance assessment: Analyzing assessment results to evaluate early performance trends under the new curriculum.
 2. Student retention mapping: Mapping student progression through the new system, with a specific interest in the transition from Grade 6 (end of Primary School) to Grade 7 (Junior Secondary School).
 
-Additional contextual background on the system transition can be found in this Context Document <link>.
+Some additional contextual background on the system transition can be found in this [Context document](<docs/CBE Relevant Context .pdf>)
 
 ## Tools used
 * **Data preparation & processing:** BigQuery (SQL), Spreadsheets
